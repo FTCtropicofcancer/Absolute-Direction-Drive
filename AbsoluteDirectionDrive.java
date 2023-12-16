@@ -28,7 +28,7 @@ public class AbsoluteDirectionDrive<string> extends LinearOpMode {
         double drive_o;
         double drive_y;
         double drive_x;
-        double drive_speed;
+        double drive_speed = 0.7;
         double angle;
         double yLF;
         double yLB;
