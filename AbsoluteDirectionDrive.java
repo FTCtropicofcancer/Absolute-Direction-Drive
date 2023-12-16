@@ -61,7 +61,6 @@ public class AbsoluteDirectionDrive<string> extends LinearOpMode {
         IMU_Parameters = new BNO055IMU.Parameters();
         IMU_Parameters.mode = BNO055IMU.SensorMode.IMU;
         imu.initialize(IMU_Parameters);
-        angle = imu.getAngularOrientation(AxesReference.INTRINSIC, AxesOrder.ZXY, AngleUnit.DEGREES).thirdAngle;
 
         waitForStart();
 
