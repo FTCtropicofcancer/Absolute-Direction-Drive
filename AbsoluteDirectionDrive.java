@@ -11,7 +11,7 @@ import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.Servo;
 
-@TeleOp(name = "AbsoluteDirectionMecanum")
+@TeleOp(name = "AbsoluteDirectionDrive")
 public class AbsoluteDirectionDrive<string> extends LinearOpMode {
 
     //set motor & servo
