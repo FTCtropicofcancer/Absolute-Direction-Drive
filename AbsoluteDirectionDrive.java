@@ -86,25 +86,6 @@ public class AbsoluteDirectionDrive<string> extends LinearOpMode {
                 //get imu information
                 angle = -(imu.getAngularOrientation(AxesReference.INTRINSIC, AxesOrder.ZXY, AngleUnit.DEGREES).firstAngle);
 
-                //gamepad caculate
-                double boxy=(double)gamepad1.left_stick_y;
-                double boxx=(double)gamepad1.left_stick_x;
-                double v = Math.abs(Math.sqrt(Math.pow(boxy, 2) + Math.pow(boxx, 2)));
-                if(v <10){
-                    drive_speed=(float)0;
-                }else if(v <50){
-                    drive_speed=(float)0.4;
-                }else{
-                    drive_speed= (float) 0.7;
-                }
-                if(gamepad1.right_stick_x>0&&gamepad1.right_stick_x<10){
-                    drive_speed=(float)0;
-                }else if(gamepad1.right_stick_x<50){
-                    drive_speed=(float)0.4;
-                }else{
-                    drive_speed= (float) 0.7;
-                }
-
                 //imu angle calculate
                 if (angle > 180){
                     angle = angle - 360;
